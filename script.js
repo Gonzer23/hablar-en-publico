@@ -70,7 +70,7 @@ function generarPDF() {
 
   doc.setFont("helvetica", "bold");
   doc.setFontSize(18);
-  doc.text("Reporte de Práctica de Oratoria", 20, 20);
+  doc.text("Reporte de Práctica", 20, 20);
   doc.setFontSize(12);
   doc.setFont("helvetica", "normal");
   doc.text(`Nombre del estudiante: ${nombre}`, 20, 35);
