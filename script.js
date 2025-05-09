@@ -103,51 +103,96 @@ function generarPDF() {
 
   let consejos = [];
 
-  if (conteoMuletillas > 5) {
+  if (conteoMuletillas > 3) {
     consejos.push(
       "• Intenta pensar antes de hablar para evitar muletillas innecesarias.",
-      "• Practica frases con fluidez para reducir interrupciones verbales.",
-      "• Usa pausas naturales en lugar de llenar con 'eh' o 'mmm'.",
-      "• Graba tus prácticas y escucha las muletillas para ser más consciente.",
-      "• Escribe guiones previos para controlar lo que vas a decir.",
-      "• Aumenta tu vocabulario para expresarte mejor.",
-      "• Practica con otras personas y pide retroalimentación.",
-      "• Haz ejercicios de respiración para mantener la calma.",
-      "• Mira tus grabaciones y cuenta cuántas veces usas muletillas.",
-      "• Usa gestos o expresiones faciales como apoyo en vez de llenar vacíos verbales.",
-      "• Ensaya en frente del espejo para ganar seguridad.",
-      "• Participa en debates o exposiciones para ganar fluidez.",
-      "• Evita depender de palabras comodín.",
-      "• Cambia muletillas por pausas cortas de silencio.",
-      "• Lee en voz alta para mejorar tu dicción."
+      "• Practica frases con fluidez para reducir interrupciones verbales."
     );
   }
+
+if (conteoMuletillas>5){
+  consejos.push(
+  "• Graba tus prácticas y escucha las muletillas para ser más consciente.",
+  "• Escribe guiones previos para controlar lo que vas a decir.",
+  "• Aumenta tu vocabulario para expresarte mejor."
+);
+}
+
+  if (conteoMuletillas>10){
+  consejos.push(
+  "• Practica con otras personas y pide retroalimentación.",
+  "• Haz ejercicios de respiración para mantener la calma.",
+  "• Mira tus grabaciones y cuenta cuántas veces usas muletillas."
+);
+}
+
+  if (conteoMuletillas>15){
+    consejos.push(
+  "• Usa gestos o expresiones faciales como apoyo en vez de llenar vacíos verbales.",
+  "• Ensaya en frente del espejo para ganar seguridad.",
+  "• Participa en debates o exposiciones para ganar fluidez."
+);
+}
+
+  if (conteoMuletillas>20){
+    consejos.push(
+  "• Evita depender de palabras comodín.",
+  "• Cambia muletillas por pausas cortas de silencio.",
+  "• Lee en voz alta para mejorar tu dicción."
+);
+}
+
+if (conteoMuletillas>20){
+  consejos.push(
+"• Usa pausas naturales en lugar de llenar con 'eh' o 'mmm'.",
+"• Evita depender de palabras comodín.",
+"• Cambia muletillas por pausas cortas de silencio.",
+"• Lee en voz alta para mejorar tu dicción."
+);
+}
 
   if (pausas > 3) {
     consejos.push(
       "• Mantén el ritmo de tu discurso con una estructura clara.",
       "• Practica cronometrando tus presentaciones.",
       "• Utiliza tarjetas o guías visuales para no perderte.",
-      "• Mejora tu memoria con esquemas y mapas mentales.",
-      "• Piensa en transiciones naturales entre ideas.",
-      "• Haz ejercicios de improvisación.",
-      "• Practica con público para ganar confianza.",
-      "• Evita memorizar palabra por palabra, enfócate en ideas clave.",
-      "• Usa preguntas retóricas para mantenerte activo.",
-      "• Controla tus nervios con respiración profunda.",
-      "• Haz simulacros con temporizador.",
-      "• Graba y analiza pausas en tu discurso.",
-      "• Aumenta tu exposición a hablar en público.",
-      "• Ensaya más veces hasta que fluya naturalmente.",
       "• No tengas miedo de equivocarte, ¡la práctica hace al maestro!"
     );
   }
 
+  if (pausas >5){
+    consejos.push(
+  "• Mejora tu memoria con esquemas y mapas mentales.",
+  "• Piensa en transiciones naturales entre ideas.",
+  "• Haz ejercicios de improvisación."
+    );
+  }
+
+  if (pausas >10){
+    consejos.push(
+  "• Evita memorizar palabra por palabra, enfócate en ideas clave.",
+  "• Usa preguntas retóricas para mantenerte activo."
+);
+}
+
+if (pausas >15){
+  consejos.push(
+  "• Practica con público para ganar confianza.",
+  "• Controla tus nervios con respiración profunda.",
+  "• Haz simulacros con temporizador."
+);
+}
+
+if (pausas >10){
+  consejos.push(
+  "• Graba y analiza pausas en tu discurso.",
+  "• Aumenta tu exposición a hablar en público.",
+  "• Ensaya más veces hasta que fluya naturalmente."
+);
+}
+
   if (conteoMuletillas <= 5 && pausas <= 3) {
     consejos.push(
-      "• Excelente trabajo. Tu fluidez es notable.",
-      "• Continúa practicando para perfeccionar tu ritmo y expresión.",
-      "• Tu nivel de oratoria es muy bueno, sigue adelante.",
       "• Has demostrado buena claridad y control, ¡felicidades!",
       "• ¡Muy bien! Usa este progreso como base para avanzar más."
     );
